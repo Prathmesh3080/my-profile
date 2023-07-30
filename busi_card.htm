@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="https://kit.fontawesome.com/23e63f3dbe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Simple Card</title>
+   <style>
+    .photo-section{     
+        display: inline-block;
+    }
+   
+    .lab{
+        padding-left: 70px;
+        font-family: 'Caveat', cursive;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+    .lab2{
+        padding-left: 130px;
+        font-weight: bolder;
+         font-family: 'Poppins', sans-serif; 
+    }
+    .content-section{    
+        font-family: 'Poppins', sans-serif;
+        display: inline-block; 
+        margin-top: 20px;
+    }
+    .points li{
+        padding: 10px;
+        list-style-type: none;
+    }
+    .points li::before{
+        content: "👉";
+    }
+    .points li{
+        font-family: 'Sofia', cursive;
+        color: rgb(2, 63, 43);
+        font-weight: bolder;
+        font-size: larger;
+    }
+    .points li:hover:nth-child(even){
+        background-color: rgb(95, 176, 179);
+        color: rgb(233, 29, 80);
+    }
+    .ion i{
+        color: rgb(20, 126, 126);
+    }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-section">
+            <img src="developer.jpg" alt="developer" width="250" height="250">
+            <br><label class="lab">Powered By:</label>
+            <br><label class="lab2">JSoftwareLabs</label>
+        </div>
+        
+            
+    
+        <div class="content-section">
+            <h1> Compare Text Online</h1>
+            <ul class="points">
+                <li>Compare Text Online Free</li>
+                <li>Download Access any where</li>
+                <li>Download large File comparison</li>
+                <li>Ignore Order and Namespacse</li>
+                <li>Side by Side Diff View</li>
+                <li>REST API</li>
+            </ul>
+        </div>
+        <div class="ion">
+            <span>Follow Me :</span>
+            <i class="fa-brands fa-linkedin fa-lg"></i>
+            <i class="fa-brands fa-facebook fa-lg"></i>
+            <i class="fa-brands fa-github fa-lg"></i>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>

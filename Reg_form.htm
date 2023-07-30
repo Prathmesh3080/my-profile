@@ -1,0 +1,116 @@
+<!DOCtype html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+        form{
+            background-color: rgba(162, 0, 255, 0.169);
+            width: 50%;
+            /* border: 1px solid rgb(167, 72, 17); */
+        }
+        legend{
+            font-family: 'Poppins', sans-serif;
+            color: rgb(22, 84, 86);
+            margin-bottom: 30px;
+            font-weight: bolder;
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+        }
+        label{
+            font-family: 'Poppins', sans-serif;
+            color: rgb(22, 84, 86);
+            font-weight: bolder;
+        }
+        input[type="text"],input[type="number"],input[type="email"],
+        input[type="password"],input[type="date"],input[type="number"]
+        {
+            width: 300px;
+            border-radius: 10px;
+            padding: 7px;
+            color: cadetblue;
+            font-weight: bolder;
+            font-size:small;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif; 
+        }
+        #detailButton1{
+            margin: 50px 0 0 100px ;
+            font-family: 'Poppins', sans-serif; 
+            border-radius: 6px;
+            width: 60px;
+            height: 30px;
+        }
+        .detailButton2{
+            margin-top: 50px;
+             margin-left: 250px;
+            font-family: 'Poppins', sans-serif; 
+            border-radius: 6px;
+            width: 60px;
+            height: 30px;
+        }
+        </style>
+    </head>
+    <body>
+    <form>
+        <fieldset>
+        <legend>Student Information Form </legend>
+       <table>
+        <tbody>
+            <tr>
+                <td> <label> User Name </label>  </td>
+                <td> <input type="text" placeholder="in Caps" required> </td>
+            </tr>
+            <tr>
+                <td> <label> Email Id </label>  </td>
+                <td> <input type="email" placeholder="@ required" required> </td>
+            </tr>
+            <tr>
+                <td> <label> Password</label>  </td>
+                <td> <input type="password" required> </td>
+            </tr>
+            <tr>
+                <td> <label> Contact</label>  </td>
+                <td> <input type="number" required> </td>
+            </tr>
+            <tr>
+                <td> <label>Date of Birth</label>  </td>
+                <td> <input type="date" required> </td>
+            </tr>
+            <tr>
+                <td> <label> Gender </label>  </td>
+                <td> <input type="radio" id="male" name="gen" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gen" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gen" value="Other">
+                    <label for="other">Other</label>
+                </td>           
+            </tr>
+            <tr>
+                <td><label>Marital Status</label></td>
+                <td><input type="checkbox" id="yes" name="mar1" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" id="no" name="mar2" value="No">
+                    <label for="no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td> <label>Image</label>  </td>
+                <td> <input type="file" required> </td>
+            </tr>
+            <tr> 
+                <td>
+                    <button type="submit" id="detailButton1">Submit</button>
+                </td>
+                <td>
+                    <button type="reset" class="detailButton2">Clear</button>
+                </td>
+            </tr>
+       
+        </tbody>
+       </table>
+    </fieldset>
+    </form>
+    </body>
+</html>
